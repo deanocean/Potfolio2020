@@ -1,0 +1,14 @@
+$blog: #49BCA9;
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    width: 350px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    padding: 80px 0 50px 80px;
+}
