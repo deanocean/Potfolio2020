@@ -3,80 +3,95 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Blog</title>
+    <title>Dean's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/all.css"/>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-blog"><a href="#" class="navbar-brand"> <span class="fab fa-html5 mr-2"></span>FrontENd</a>
-      <button type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-      <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item active"><a href="#" class="nav-link">Blog</a></li>
+    <nav>
+      <div class="top">
+        <div class="avatar"></div>
+        <h1>Dean Kou</h1>
+        <p>Web Designer & <br/>Front End Developer</p>
+      </div>
+      <div class="bottom">
+        <ul class="navigation">
+          <li><a href="index.html">WEB WORKS</a></li>
+          <li><a href="design.html">DESIGN</a></li>
+          <li><a href="about.html">ABOUT</a></li>
         </ul>
+        <ul class="iconLink">
+          <li><a class="icon"> </a></li>
+          <li><a class="icon"> </a></li>
+          <li><a class="icon"> </a></li>
+        </ul><small>© 2020 ・ Produced by Dean Kou</small>
       </div>
     </nav>
-    <div class="container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-transparent pl-0">
-          <li class="breadcrumb-item"><a href="#" class="text-blog">Home</a></li>
-          <li class="breadcrumb-item"><a href="#" class="text-blog">Blog</a></li>
-          <li aria-current="page" class="breadcrumb-item active">How to become a front-end developer?</li>
-        </ol>
-      </nav>
-      <h1 class="text-blog">How to become a front-end developer?</h1>
-      <div class="row">
-        <div class="col-md-8 order-2 order-md-1">
-          <article>
-            <div class="my-2 text-secondary"><small> <span class="mr-3"> <i class="fa fa-user mr-1"></i>Dean</span><span class="mr-3">2020/08/16</span><span> <i class="fa fa-tag mr-1"> </i>Web Development</span></small></div>
-            <p>A front end web developer is the person who implements web designs through coding languages like HTML, CSS, and JavaScript. Though it’s not as common anymore, front end developers are/were sometimes called “client-side developers” to distinguish them from back end developers who program what goes on behind the scenes like databases. </p>
-            <h2 class="text-secondary">What Skills do You Use?</h2>
-            <p>Front end web developers use three primary coding languages to code the website and web app designs created by web designers:</p>
-            <ul>
-              <li>HTML<code> (HyperText Markup Language)</code></li>
-              <li>CSS<code> (Style Sheet Language)</code></li>
-              <li>Javascript</li>
-            </ul><img src="https://picsum.photos/id/180/1600/1200" class="img-fluid"/>
-          </article>
-          <div class="card mt-5">
-            <div class="card-header">Comments</div>
-            <div class="card-body">
-              <div class="media"><img src="https://randomuser.me/api/portraits/men/51.jpg" width="64" height="64" alt="..." class="mr-3"/>
-                <div class="media-body">
-                  <h5 class="mt-0">Dean</h5>
-                  <div class="form-group">
-                    <textarea rows="3" class="form-control"></textarea>
-                    <button class="btn btn-light btn-block mt-2">Submit</button>
-                  </div>
-                </div>
+    <div class="mainContent pt-5">
+      <div class="container">
+        <h1>WEB WORKS</h1>
+        <div class="row mt-5">
+          <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+            <div class="card"><img src="https://picsum.photos/id/1/400/250" class="card-img-top"/>
+              <div class="card-body">
+                <h4 class="card-title">Javascript Tetris</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text skillBox">
+                  <p class="title mb-1">Skills</p><span class="md_tag">SCSS</span><span class="md_tag">Javascript</span><span class="md_tag">Bootstrap</span>
+                </p><a href="#" class="card-link">Go to Site<i class="fas fa-link ml-1"></i></a><a href="#" class="card-link">Code on GitHub<i class="fas fa-link ml-1"></i></a>
               </div>
-              <div class="media mt-3"><img src="https://randomuser.me/api/portraits/women/11.jpg" width="64" height="64" alt="..." class="mr-3"/>
-                <div class="media-body">
-                  <h5 class="mt-0">Mary</h5>Cras sit amet nibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                  <p class="mt-1"><small class="text-muted">About 6 hours ago</small></p>
-                </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+            <div class="card"><img src="https://picsum.photos/id/1/400/250" class="card-img-top"/>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="#" class="card-link">Go to Site</a><a href="#" class="card-link">Code on GitHub</a>
               </div>
-              <div class="media mt-3"><img src="https://randomuser.me/api/portraits/women/12.jpg" width="64" height="64" alt="..." class="mr-3"/>
-                <div class="media-body">
-                  <h5 class="mt-0">Jessica</h5>    CNulla vel metus snunc ac nisi vulputate sollicitudin. Cras purus odio,ras sit amet nibh libero, in gravida nulla. fringilla. Donec lacinia congue felis in faucibus.
-                  <p class="mt-1"><small class="text-muted">About 8 hours ago</small></p>
-                </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+            <div class="card"><img src="https://picsum.photos/id/1/400/250" class="card-img-top"/>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="#" class="card-link">Go to Site</a><a href="#" class="card-link">Code on GitHub</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 order-1 order-md-2 my-3 my-md-0"> 
-          <h2 class="text-secondary">Tag</h2><a href="#" class="badge badge-info mr-1"> <i class="fa fa-tag mr-1"></i>Info</a><a href="#" class="badge badge-info mr-1"> <i class="fa fa-tag mr-1"></i>html</a><a href="#" class="badge badge-info mr-1"> <i class="fa fa-tag mr-1"></i>css</a><a href="#" class="badge badge-info mr-1"> <i class="fa fa-tag mr-1"></i>javascript</a><a href="#" class="badge badge-info mr-1"> <i class="fa fa-tag mr-1"></i>Bootstrap</a><a href="#" class="badge badge-info mr-1"> <i class="fa fa-tag mr-1"></i>sass</a><a href="#" class="badge badge-info mr-1"> <i class="fa fa-tag mr-1"></i>Vue.js</a><a href="#" class="badge badge-info mr-1"> <i class="fa fa-tag mr-1"></i>RWD</a>
+        <div class="row mt-5">
+          <div class="col">
+            <div class="card"><img src="https://picsum.photos/id/1/400/250" class="card-img-top"/>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="#" class="card-link">Go to Site</a><a href="#" class="card-link">Code on GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card"><img src="https://picsum.photos/id/1/400/250" class="card-img-top"/>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="#" class="card-link">Go to Site</a><a href="#" class="card-link">Code on GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card"><img src="https://picsum.photos/id/1/400/250" class="card-img-top"/>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="#" class="card-link">Go to Site</a><a href="#" class="card-link">Code on GitHub</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <footer class="bg-light py-4 mt-5">
-      <div class="container d-flex justify-content-between">
-        <div>© Copyright 2020 Dean Huang        </div>
-        <div> <a class="text-blog"><i class="fab fa-facebook-square"></i></a><a class="text-blog ml-2"><i class="fab fa-twitter-square"></i></a><a class="text-blog ml-2"><i class="fab fa-instagram-square"></i></a></div>
-      </div>
-    </footer>
     <script src="js/vendors.js"></script>
     <script src="js/all.js"></script>
   </body>
