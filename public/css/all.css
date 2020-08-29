@@ -14,6 +14,7 @@ li {
 
 nav {
   width: 300px;
+  min-height: 600px;
   position: fixed;
   left: 0;
   top: 0;
