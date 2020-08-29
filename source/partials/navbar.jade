@@ -1,24 +1,33 @@
+mixin link(url, name)
+    if (path === url)
+        li.active
+            a(href='#{ url }') #{ name } 
+    else
+        li
+            a(href='#{ url }') #{ name } 
+
+
 nav
     .top
         .avatar
         h1 Dean Kou
-        p Web Designer & 
+        p.description Web Designer & 
             br
             | Front End Developer
     .bottom
         ul.navigation
-            li
-                a(href="index.html") WEB WORKS
-            li
-                a(href="design.html") DESIGN
-            li
-                a(href="about.html") ABOUT
+            each item in menu.list
+                +link(item.url, item.name)
 
         ul.iconLink
             li
-                a.icon 
+                a.icon(target="_blank" href="https://github.com/deanocean")
+                    i.fab.fa-github
             li
-                a.icon 
+                a.icon(target="_blank" href="https://codepen.io/deanocean")
+                    i.fab.fa-codepen
             li
-                a.icon 
-        small © 2020 ・ Produced by Dean Kou
+                a.icon(target="_blank" href="https://www.instagram.com/jinding_huang/")
+                    i.fab.fa-instagram
+
+        p.copyright © 2020・Produced by Dean Kou

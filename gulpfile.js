@@ -43,6 +43,14 @@ gulp.task('jade', function() {
     // gulp.src('./source/*.jade')
     gulp.src('./source/!(_)*.jade')
       .pipe(plumber())
+      .pipe(data(function(){
+        var menu = require('./source/data/menu.json');
+        var source = {
+          'menu': menu
+        }
+        console.log(source);
+        return source;
+      }))
       .pipe(jade({
         pretty: true
       }))
@@ -85,8 +93,8 @@ gulp.task('jade', function() {
 
   gulp.task('vendorJs', function(){
     return gulp.src([
-        './node_modules/jquery/dist/jquery.min.js',
-        './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+      './node_modules/jquery/dist/jquery.min.js',
+      './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
       ])
       .pipe(concat('vendors.js'))
       .pipe(gulpif( options.env === 'production' , uglify()))

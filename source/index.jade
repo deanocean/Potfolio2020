@@ -1,79 +1,138 @@
 extend _layout.jade
 
 block navbar
+    - var path = 'index.html'
     include partials/navbar.jade
 
 block content
-    .mainContent.pt-5
+    #webWorks.mainContent.py-5.px-4
         .container
-            h1 WEB WORKS
-            .row.mt-5
+            h1 #{menu.list[0].name}
+            .row.mt-5.align-items-stretch
                 .col-12.col-lg-4.mt-4.mt-lg-0
-                    .card
-                        img.card-img-top(src="https://picsum.photos/id/1/400/250")
-                        .card-body
-                            h4.card-title Javascript Tetris
-                            p.card-text
-                                | Some quick example text to build on the card title and make up the bulk of the card's content.
-                            p.card-text.skillBox
-                                p.title.mb-1 Skills
-                                span.md_tag SCSS
-                                span.md_tag Javascript
-                                span.md_tag Bootstrap
-                            a.card-link(href='#') Go to Site
-                                i.fas.fa-link.ml-1
-                            a.card-link(href='#') Code on GitHub
-                                i.fas.fa-link.ml-1
+                    .card.h-100
+                        img.card-img-top.shadow-sm(src="../images/web_kyotoTour.jpg")
+                        .card-body.d-flex.flex-wrap.align-content-between
+                            .topBox
+                                h4.card-title Kyoto Tour Guide
+                                p.card-text
+                                    | A practice of building a website about introduction to tourism of Kyoto.
+                            .bottomBox
+                                p.card-text.skillBox
+                                    p.title.mb-1 Skills
+                                    span.md_tag RWD
+                                    span.md_tag javascript
+                                    span.md_tag jquery
+                                a.card-link(target="_blank" href='https://deanocean.github.io/personalWork_KyotoTour/') Go to Site
+                                    i.fas.fa-link.ml-1
+                                a.card-link(target="_blank" href='https://github.com/deanocean/personalWork_KyotoTour/') Code on GitHub
+                                    i.fas.fa-link.ml-1
                 .col-12.col-lg-4.mt-4.mt-lg-0
-                    .card
-                        img.card-img-top(src="https://picsum.photos/id/1/400/250")
-                        .card-body
-                            h5.card-title Card title
-                            h6.card-subtitle.mb-2.text-muted Card subtitle
-                            p.card-text
-                                | Some quick example text to build on the card title and make up the bulk of the card's content.
-                            a.card-link(href='#') Go to Site
-                            a.card-link(href='#') Code on GitHub
+                    .card.h-100
+                        img.card-img-top.shadow-sm(src="../images/web_kyotouTour--spring.jpg")
+                        .card-body.d-flex.flex-wrap.align-content-between
+                            .topBox
+                                h4.card-title Kyoto Tour Landing
+                                p.card-text
+                                    | A landing page in Kyoto Tour Guide which displays my layout skill.
+                            .bottomBox
+                                p.card-text.skillBox
+                                    p.title.mb-1 Skills
+                                    span.md_tag RWD
+                                    span.md_tag javascript
+                                    span.md_tag jquery
+                                a.card-link(target="_blank" href='https://deanocean.github.io/personalWork_KyotoTour/spring/') Go to Site
+                                    i.fas.fa-link.ml-1
+                                a.card-link(target="_blank" href='https://github.com/deanocean/personalWork_KyotoTour/') Code on GitHub
+                                    i.fas.fa-link.ml-1
                 .col-12.col-lg-4.mt-4.mt-lg-0
-                    .card
-                        img.card-img-top(src="https://picsum.photos/id/1/400/250")
-                        .card-body
-                            h5.card-title Card title
-                            h6.card-subtitle.mb-2.text-muted Card subtitle
-                            p.card-text
-                                | Some quick example text to build on the card title and make up the bulk of the card's content.
-                            a.card-link(href='#') Go to Site
-                            a.card-link(href='#') Code on GitHub
-            .row.mt-5
-                .col
-                    .card
-                        img.card-img-top(src="https://picsum.photos/id/1/400/250")
-                        .card-body
-                            h5.card-title Card title
-                            h6.card-subtitle.mb-2.text-muted Card subtitle
-                            p.card-text
-                                | Some quick example text to build on the card title and make up the bulk of the card's content.
-                            a.card-link(href='#') Go to Site
-                            a.card-link(href='#') Code on GitHub
-                .col
-                    .card
-                        img.card-img-top(src="https://picsum.photos/id/1/400/250")
-                        .card-body
-                            h5.card-title Card title
-                            h6.card-subtitle.mb-2.text-muted Card subtitle
-                            p.card-text
-                                | Some quick example text to build on the card title and make up the bulk of the card's content.
-                            a.card-link(href='#') Go to Site
-                            a.card-link(href='#') Code on GitHub
-                .col
-                    .card
-                        img.card-img-top(src="https://picsum.photos/id/1/400/250")
-                        .card-body
-                            h5.card-title Card title
-                            h6.card-subtitle.mb-2.text-muted Card subtitle
-                            p.card-text
-                                | Some quick example text to build on the card title and make up the bulk of the card's content.
-                            a.card-link(href='#') Go to Site
-                            a.card-link(href='#') Code on GitHub
+                    .card.h-100
+                        img.card-img-top.shadow-sm(src="../images/web_aquarium.jpg")
+                        .card-body.d-flex.flex-wrap.align-content-between
+                            .topBox
+                                h4.card-title Bootstrap Aquarium
+                                p.card-text
+                                    | A practice of a virtual aquarium homepage which used Bootstrap to develop.
+                            .bottomBox
+                                p.card-text.skillBox
+                                    p.title.mb-1 Skills
+                                    span.md_tag SCSS
+                                    span.md_tag Bootstrap                                
+                                    span.md_tag gulp
+                                a.card-link(target="_blank" href='https://deanocean.github.io/bootstrap_project_landing/public/index.html') Go to Site
+                                    i.fas.fa-link.ml-1
+                                a.card-link(target="_blank" href='https://github.com/deanocean/bootstrap_project_landing/') Code on GitHub
+                                    i.fas.fa-link.ml-1
+            .row.mt-5.align-items-stretch
+                .col-12.col-lg-4.mt-4.mt-lg-0
+                    .card.h-100
+                        img.card-img-top.shadow-sm(src="../images/web_blog.jpg")
+                        .card-body.d-flex.flex-wrap.align-content-between
+                            .topBox
+                                h4.card-title Bootstrap Blog
+                                p.card-text
+                                    | A practice of a virtual blog page which used Bootstrap to develop.
+                            .bottomBox
+                                p.card-text.skillBox
+                                    p.title.mb-1 Skills
+                                    span.md_tag SCSS
+                                    span.md_tag Bootstrap                                
+                                    span.md_tag gulp
+                                a.card-link(target="_blank" href='https://deanocean.github.io/bootstrap_project_blog/public/index.html') Go to Site
+                                    i.fas.fa-link.ml-1
+                                a.card-link(target="_blank" href='https://github.com/deanocean/bootstrap_project_blog/') Code on GitHub
+                                    i.fas.fa-link.ml-1
+                .col-12.col-lg-4.mt-4.mt-lg-0
+                    .card.h-100
+                        img.card-img-top.shadow-sm(src="../images/web_json.jpg")
+                        .card-body.d-flex.flex-wrap.align-content-between
+                            .topBox
+                                h4.card-title Javascript Json
+                                p.card-text
+                                    | A practice which used ajax that connect to json file to synchronize data without reloading. 
+                            .bottomBox
+                                p.card-text.skillBox
+                                    p.title.mb-1 Skills
+                                    span.md_tag ajax                                
+                                    span.md_tag json                                
+                                    span.md_tag javascript
+                                a.card-link(target="_blank" href='https://deanocean.github.io/Javascript_json/public/index.html') Go to Site
+                                    i.fas.fa-link.ml-1
+                                a.card-link(target="_blank" href='https://github.com/deanocean/Javascript_json/') Code on GitHub
+                                    i.fas.fa-link.ml-1
+                .col-12.col-lg-4.mt-4.mt-lg-0
+                    .card.h-100
+                        img.card-img-top.shadow-sm(src="../images/web_tetris.jpg")
+                        .card-body.d-flex.flex-wrap.align-content-between
+                            .topBox
+                                h4.card-title Javascript Tetris
+                                p.card-text
+                                    | A practice of using vanilla javascript to create a tetris game.
+                            .bottomBox
+                                p.card-text.skillBox
+                                    p.title.mb-1 Skills
+                                    span.md_tag javascript
+                                a.card-link(target="_blank" href='https://deanocean.github.io/Javascript_Tetris/') Go to Site
+                                    i.fas.fa-link.ml-1
+                                a.card-link(target="_blank" href='https://github.com/deanocean/Javascript_Tetris/') Code on GitHub
+                                    i.fas.fa-link.ml-1
+            .row.mt-5.align-items-stretch
+                .col-12.col-lg-4.mt-4.mt-lg-0
+                    .card.h-100
+                        img.card-img-top.shadow-sm(src="../images/web_todo.jpg")
+                        .card-body.d-flex.flex-wrap.align-content-between
+                            .topBox
+                                h4.card-title Javascript Localstorage
+                                p.card-text
+                                    | A practice of using localstorage to store your to-do list in your computer.
+                            .bottomBox
+                                p.card-text.skillBox
+                                    p.title.mb-1 Skills
+                                    span.md_tag javascript
+                                    span.md_tag localstorage                                
+                                a.card-link(target="_blank" href='https://deanocean.github.io/to-do-list_localStorage/') Go to Site
+                                    i.fas.fa-link.ml-1
+                                a.card-link(target="_blank" href='https://github.com/deanocean/to-do-list_localStorage/') Code on GitHub
+                                    i.fas.fa-link.ml-1
                     
                     

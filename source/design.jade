@@ -1,41 +1,41 @@
 extend _layout.jade
 
 block navbar
+    - var path = 'design.html'
     include partials/navbar.jade
 
 block content
-    .mainContent.pt-5
+    #design.mainContent.py-5.px-4
         .container
-            h1 DESIGN
+            h1 #{menu.list[1].name}
             .row.mt-5
                 .col
                     .card-columns
-                        .card
-                            img.card-img-top(src='https://picsum.photos/id/101/400/300', alt='...')
+                        .card.mb-4.js_zoomImage
+                            img.card-img-top(src='../images/design_banner.png', alt='...')
                             .card-img-overlay
-                                h3.card-title Ikebana
-                        .card
-                            img.card-img-top(src='https://picsum.photos/id/111/400/800', alt='...')
+                                h3.h4.card-title Sharing Kyoto Banner
+                        .card.mb-4.js_zoomImage
+                            img.card-img-top(src='../images/design_coupon01.jpg', alt='...')
                             .card-img-overlay
-                                h3.card-title Ikebana
-                        .card
-                            img.card-img-top(src='https://picsum.photos/id/81/400/900', alt='...')
+                                h3.h4.card-title Cafe coupon 01
+                        .card.mb-4.js_zoomImage
+                            img.card-img-top(src='../images/design_coupon02.png', alt='...')
                             .card-img-overlay
-                                h3.card-title Ikebana
-                        .card
-                            img.card-img-top(src='https://picsum.photos/id/11/400/700', alt='...')
+                                h3.h4.card-title Cafe coupon 02
+                        .card.mb-4.js_zoomImage
+                            img.card-img-top(src='../images/design_ikebana.png', alt='...')
                             .card-img-overlay
-                                h3.card-title Ikebana
-                        .card
-                            img.card-img-top(src='https://picsum.photos/id/25/400/1200', alt='...')
+                                h3.h4.card-title Ikebana website
+                        .card.mb-4.js_zoomImage
+                            img.card-img-top(src='../images/design_sumo.png', alt='...')
                             .card-img-overlay
-                                h3.card-title Ikebana
-                        .card
-                            img.card-img-top(src='https://picsum.photos/id/66/400/1000', alt='...')
+                                h3.h4.card-title Sumo website
+                        .card.mb-4.js_zoomImage
+                            img.card-img-top(src='../images/design_kyoMachi.png', alt='...')
                             .card-img-overlay
-                                h3.card-title Ikebana
-                        .card
-                            img.card-img-top(src='https://picsum.photos/id/78/400/1300', alt='...')
-                            .card-img-overlay
-                                h3.card-title Ikebana
-                        
+                                h3.h4.card-title Japanese hotel website
+    .zoomBox
+        .content
+            img(src="../images/design_kyoMachi.png") 
+        i.far.fa-times-circle                           
