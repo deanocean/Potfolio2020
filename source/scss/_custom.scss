@@ -212,3 +212,19 @@ nav {
         font-size: 30px;
     }
 }
+
+#about {
+    .container {
+        position: relative;
+        padding-right: 300px;
+    }
+    img {
+        width: 250px;
+        height: auto;
+        float: right;
+        position: relative;
+    }
+    li {
+        line-height: 2;
+    }
+}
