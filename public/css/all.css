@@ -21,7 +21,14 @@ nav {
   bottom: 0;
   background-color: #000;
   color: #fff;
-  padding: 40px 0 40px 60px; }
+  padding: 40px 0 40px 60px;
+  transition: left 0.3s;
+  z-index: 1; }
+  nav.open {
+    left: 0; }
+  @media screen and (max-width: 767px) {
+    nav {
+      left: -300px; } }
   nav .avatar {
     width: 150px;
     height: 150px;
@@ -66,9 +73,43 @@ nav {
           font-size: 24px; }
     nav .bottom .copyright {
       font-size: 12px; }
+  nav .hamburger {
+    display: none;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    right: -45px;
+    top: 20px; }
+    @media screen and (max-width: 767px) {
+      nav .hamburger {
+        display: block; } }
+    nav .hamburger::before, nav .hamburger::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: #000;
+      transition: all .5s; }
+    nav .hamburger::before {
+      top: -10px; }
+    nav .hamburger::after {
+      bottom: -10px; }
+    nav .hamburger.open {
+      background-color: rgba(0, 0, 0, 0); }
+      nav .hamburger.open::before {
+        top: 0;
+        transform: rotate(45deg); }
+      nav .hamburger.open::after {
+        bottom: 0;
+        transform: rotate(-45deg); }
 
 .mainContent {
   margin-left: 300px; }
+  @media screen and (max-width: 767px) {
+    .mainContent {
+      margin-left: 0; } }
 
 .md_tag {
   border: 1px solid #000;
@@ -170,12 +211,18 @@ nav {
 #about .container {
   position: relative;
   padding-right: 300px; }
+  @media screen and (max-width: 767px) {
+    #about .container {
+      padding-right: 0; } }
 
 #about img {
   width: 250px;
   height: auto;
   float: right;
   position: relative; }
+  @media screen and (max-width: 767px) {
+    #about img {
+      display: none; } }
 
 #about li {
   line-height: 2; }

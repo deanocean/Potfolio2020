@@ -36,3 +36,8 @@ function cursorPos(x, y, scrollAmt){
 $('.zoomBox').click(function () {
     $('.zoomBox').toggleClass('active');
 })
+
+$('.hamburger').click(function () {
+    $('nav').toggleClass('open');
+    $('.hamburger').toggleClass('open');
+})

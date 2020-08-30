@@ -26,6 +26,14 @@ nav {
     background-color: #000;
     color: #fff;
     padding: 40px 0 40px 60px;
+    transition: left 0.3s;
+    z-index: 1;
+    &.open {
+        left: 0;
+    }
+    @media screen and (max-width: 767px) {
+        left: -300px;
+    }
     .avatar {
         width: 150px;
         height: 150px;
@@ -88,10 +96,52 @@ nav {
             font-size: 12px;
         }
     }
+    .hamburger {
+        display: none;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        right: -45px;
+        top: 20px;
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background-color: #000;
+            transition: all .5s;
+        }
+        &::before {
+            top: -10px;
+        }
+        &::after {
+            bottom: -10px;
+        }
+        &.open {
+            background-color: rgba(0, 0, 0, 0);
+            &::before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+            &::after {
+                bottom: 0;
+                transform: rotate(-45deg);
+            }    
+        }
+    }
 }
 
 .mainContent {
     margin-left: 300px;
+    @media screen and (max-width: 767px) {
+        margin-left: 0;
+    }
 }
 
 .md_tag {
@@ -218,12 +268,18 @@ nav {
     .container {
         position: relative;
         padding-right: 300px;
+        @media screen and (max-width: 767px) {
+            padding-right: 0;
+        }
     }
     img {
         width: 250px;
         height: auto;
         float: right;
         position: relative;
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
     li {
         line-height: 2;
