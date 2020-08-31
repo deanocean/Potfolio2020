@@ -245,6 +245,7 @@ nav {
     padding: 60px 0;
     overflow-y: auto;
     cursor: none;
+    z-index: 2;
     &.active {
         display: block;
     }
