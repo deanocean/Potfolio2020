@@ -9,6 +9,9 @@ $('.js_zoomImage').click(function (e) {
     let imgData = $(this).find('img').attr('src');
     $('.zoomBox .content img').attr('src', imgData);
 
+    x = parseInt(e.clientX)
+    y = parseInt(e.clientY)
+    
     cursorPos(x, y, scrollAmt)
 
     $('.zoomBox').scroll(function(){
